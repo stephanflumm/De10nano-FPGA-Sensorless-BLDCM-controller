@@ -27,7 +27,7 @@ int main(void)
 	i = 5000;
 	// Motor start
 	while(i > 100) {
-	    //_delay_us(i);
+	    	_delay_us(i);
 		bldc_move();
 		bldc_step++;
 		bldc_step %= 6;
